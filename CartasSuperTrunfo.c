@@ -7,16 +7,73 @@
 //Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+    char estado;
+    char cidade[50];
+    char codigo[10];
+    int populacao;
+    float area;
+    float pib; 
+    int numTurismo; // variavel para número de turismo 
+
+
+    // Cadastro da primeira Carta 1
+    printf("<CADASTRO DE CARTA 1> \n"); 
+    printf("Escolha uma leta de A a H: ");
+    scanf(" %c", &estado);
+    printf("Código da carta: ");
+    scanf(" %s", &codigo);
+    printf("Nome da cidade: ");
+    scanf(" %s", &cidade);
+    printf("População: ");
+    scanf(" %d", &populacao);
+    printf("Área(km): ");
+    scanf(" %f", &area);
+    printf("PIB: ");
+    scanf(" %f", &pib);
+    printf("Número de pontos Turísticos: ");
+    scanf(" %d", &numTurismo);
+
+
+    // Imprimindo a carta cadastrada
+    printf("<CARTA 1> \n"); 
+    printf("Estado: %c\n ", estado);
+    printf("Código: %c %s\n ", estado, codigo);
+    printf("Nome da Cidade: %s\n ", cidade);
+    printf("População: %d\n ", populacao, "km");
+    printf("Área(km): %.2f\n ", area);
+    printf("PIB: %.2f\n ", pib);
+    printf("Número de pontos Turísticos: %d\n ", numTurismo);
+
+
+    // Cadastro da segunda Carta 2
+    printf("<CADASTRO DE CARTA 2> \n"); 
+    printf("Escolha uma leta de A a H: ");
+    scanf(" %c", &estado);
+    printf("Código da carta: ");
+    scanf(" %s", &codigo);
+    printf("Nome da cidade: ");
+    scanf(" %s", &cidade);
+    printf("População: ");
+    scanf(" %d", &populacao);
+    printf("Área(km): ");
+    scanf(" %f", &area);
+    printf("PIB: ");
+    scanf(" %f", &pib);
+    printf("Número de pontos Turísticos: ");
+    scanf(" %d", &numTurismo);
+
+
+    // Imprimindo a carta cadastrada
+    printf("<CARTA 2> \n"); 
+    printf("Estado: %c\n ", estado);
+    printf("Código: %c %s\n ", estado, codigo);
+    printf("Nome da Cidade: %s\n ", cidade);
+    printf("População: %d\n ", populacao);
+    printf("Área(km): %f\n ", area, "km");
+    printf("PIB: %f\n ", pib);
+    printf("Número de pontos Turísticos: %d ", numTurismo);
 
     return 0;
+
 }
